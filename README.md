@@ -40,3 +40,18 @@ rsync -I -PrlptD ~/Documents/hypi_services_ocr/ocr_extractor/json_tmp ubuntu@51.
 server ip
 
 `ipconfig getifaddr en0`
+
+
+## Using VSCode with Ubuntu/Linux server
+
+use remote explorer and set this in config file
+
+Host *
+ServerAliveInterval 30
+ServerAliveCountMax 6
+
+
+Host project-name
+    HostName server-ip
+    User ubuntu
+    IdentityFile path to pem file
