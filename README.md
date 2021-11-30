@@ -46,6 +46,7 @@ server ip
 
 use remote explorer and set this in config file
 
+```
 Host *
 ServerAliveInterval 30
 ServerAliveCountMax 6
