@@ -56,7 +56,7 @@ Host project-name
     HostName server-ip
     User ubuntu
     IdentityFile path to pem file
-
+```
 
 ## Creating postgres DB
 
@@ -66,4 +66,3 @@ create database mydb;
 create user myuser with encrypted password 'mypass';
 grant all privileges on database mydb to myuser;
 ```
-grant all privileges on database mydb to myuser;
