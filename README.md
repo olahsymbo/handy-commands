@@ -73,3 +73,8 @@ grant all privileges on database mydb to myuser;
 ```
 ALTER USER role SUPERUSER CREATEDB CREATEROLE;
 ```
+
+## Drop DB
+
+``` 
+sudo -u postgres dropdb databasename
