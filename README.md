@@ -24,9 +24,9 @@ export PATH="$PATH:/home/olasimbo/.local/bin"
 source ~/.bashrc
 ```
 
-## proper checkout
+## proper checkout/merge branch
 
-I will suggest you update the dev branch locally `git checkout dev && git pull` then merge `dev` branch into your branch locally `git checkout feature/CGP-3 && git merge --no-ff dev`
+`git checkout dev && git pull` then merge `dev` branch into your branch locally `git checkout feature/CGP-3 && git merge --no-ff dev`
 then do `git push to update feature/CGP-3`
 
 
