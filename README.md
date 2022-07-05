@@ -1,4 +1,4 @@
-# notes
+# handy-commands
 
 ## Banish .idea from repo
 
@@ -9,7 +9,7 @@ git add .gitignore
 git commit -m '.idea banished!'
 ```
 
-## Set version based virtualenv
+## Set version based on virtualenv
 
 `virtualenv -p /usr/local/opt/python@3.7/bin/python3.7 ocrenv`
 
