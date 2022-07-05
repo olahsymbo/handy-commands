@@ -33,8 +33,8 @@ then do `git push to update feature/CGP-3`
 ## copy files to server
 
 ```
-rsync -PrlptD ~/Documents/hypi/AnnotatedData/untitled_folder ubuntu@51.210.39.109:/home/ubuntu/hypi_services_ocr/ocr_extractor/csv_tmp (edited)
-rsync -I -PrlptD ~/Documents/hypi_services_ocr/ocr_extractor/json_tmp ubuntu@51.210.39.109:/home/ubuntu/hypi_services_ocr/ocr_extractor/json_tmp
+rsync -PrlptD ~/Documents/hor/AnnotatedData/untitled_folder ubuntu@ipaddress:/home/ubuntu/hor/csv_tmp 
+rsync -I -PrlptD ~/Documents/hor/json_tmp ubuntu@ipaddress:/home/ubuntu/hor/json_tmp
 ```
 
 server ip
