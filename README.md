@@ -10,10 +10,20 @@ git commit -m '.idea banished!'
 git push
 ```
 
-## Set version based on virtualenv
+## Select python version for a virtualenv
 
 `virtualenv -p /usr/local/opt/python@3.7/bin/python3.7 ocrenv`
 
+you can change `python@3.7` assuming you have multiple versions. 
+
+
+## alternavite python version selection method
+
+```
+pyenv install 3.7.9
+
+pyenv local 3.7.9
+```
 
 ## Set up pipenv
 
