@@ -17,7 +17,7 @@ git push
 you can change `python@3.7` assuming you have multiple versions. 
 
 
-## alternavite python version selection method
+## Alternavite python version selection method
 
 ```
 pyenv install 3.7.9
