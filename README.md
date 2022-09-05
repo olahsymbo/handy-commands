@@ -29,26 +29,20 @@ source ~/.bashrc
 `git checkout dev && git pull` then merge `dev` branch into your branch locally `git checkout feature/CGP-3 && git merge --no-ff dev`
 then do `git push` to update `feature/CGP-3`
 
-
-## add your ssh key to cloud VM authorized keys (you can then connect to VM directly from VScode remote-ssh or from local terminal)
-
-```
-cat ~/.ssh/id_rsa.pub | sudo ssh -i /path/to/pem_or_key user@ipaddress "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
-```
-
-## copy files to server
-
-```
-rsync -PrlptD ~/Documents/hor/AnnotatedData/untitled_folder ubuntu@ipaddress:/home/ubuntu/hor/csv_tmp 
-rsync -I -PrlptD ~/Documents/hor/json_tmp ubuntu@ipaddress:/home/ubuntu/hor/json_tmp
-```
-
 server ip
 
 `ipconfig getifaddr en0`
 
 
-## Using VSCode with Ubuntu/Linux server
+## add your ssh key to cloud VM authorized keys
+
+```
+cat ~/.ssh/id_rsa.pub | sudo ssh -i /path/to/pem_or_key user@ipaddress "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
+you can then connect to VM directly from VScode remote-ssh or from local terminal
+
+
+## Using VSCode Remote-SSH with Ubuntu/Linux server
 
 use remote explorer and set this in config file
 
@@ -61,7 +55,16 @@ ServerAliveCountMax 6
 Host project-name
     HostName server-ip
     User ubuntu
-    IdentityFile path to pem file
+    IdentityFile /path/to/pem
+```
+Incase you already copied your local ssh to cloud VM authorized keys, then you can omit IdentityFile (not needed)
+
+
+## copy files to server
+
+```
+rsync -PrlptD ~/Documents/hor/AnnotatedData/untitled_folder ubuntu@ipaddress:/home/ubuntu/hor/csv_tmp 
+rsync -I -PrlptD ~/Documents/hor/json_tmp ubuntu@ipaddress:/home/ubuntu/hor/json_tmp
 ```
 
 ## Creating postgres DB
