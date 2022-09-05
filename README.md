@@ -44,7 +44,7 @@ you can then connect to VM directly from VScode remote-ssh or from local termina
 
 ## Using VSCode Remote-SSH with Ubuntu/Linux server
 
-use remote explorer and set this in config file
+First add Remote-SSH under extension in VSCode, then edit your `.ssh` config file with the following and save it
 
 ```
 Host *
