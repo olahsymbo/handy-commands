@@ -30,6 +30,12 @@ source ~/.bashrc
 then do `git push` to update `feature/CGP-3`
 
 
+## add your ssh key to cloud VM authorized keys (you can then connect to VM directly from VScode remote-ssh or from local terminal)
+
+```
+cat ~/.ssh/id_rsa.pub | sudo ssh -i /path/to/pem_or_key user@ipaddress "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
+
 ## copy files to server
 
 ```
