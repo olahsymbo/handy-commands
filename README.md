@@ -7,6 +7,7 @@ find . -name .idea -print0 | xargs -0 git rm -r -f --ignore-unmatch
 echo .idea >> .gitignore  
 git add .gitignore  
 git commit -m '.idea banished!'
+git push
 ```
 
 ## Set version based on virtualenv
