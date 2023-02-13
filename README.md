@@ -98,3 +98,27 @@ ALTER USER role SUPERUSER CREATEDB CREATEROLE;
 
 ``` 
 sudo -u postgres dropdb databasename
+
+
+
+## Network Issues 
+
+# OCI Linux Server
+
+For issues with making requests to a linux server on OCI, set these options for the ports:
+
+```
+sudo firewall-cmd --zone=public --permanent --add-port=5005/tcp 
+
+sudo firewall-cmd --reload
+```
+
+# OCI Ubuntu Server
+
+For ubuntu:
+
+```
+sudo iptables -I INPUT 6 -p tcp --dport 5010 -j ACCEPT 
+
+sudo netfilter-persistent save
+```
