@@ -98,7 +98,7 @@ ALTER USER role SUPERUSER CREATEDB CREATEROLE;
 
 ``` 
 sudo -u postgres dropdb databasename
-
+```
 
 
 ## Network Issues 
