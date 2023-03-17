@@ -132,3 +132,12 @@ sudo iptables -I INPUT 6 -p tcp --dport 5010 -j ACCEPT
 
 sudo netfilter-persistent save
 ```
+
+or use
+
+```
+sudo ufw allow 22
+sudo ufw allow your-port
+sudo ufw enable
+```
+First ensure port 22 is opened, open your preferred port (e.g 5010), then enable the firewall (select `y`). 
