@@ -35,7 +35,7 @@ export PATH="$PATH:/home/olasimbo/.local/bin"
 source ~/.bashrc
 ```
 
-## proper checkout/merge branch
+## Proper checkout/merge branch
 
 `git checkout dev && git pull` then merge `dev` branch into your branch locally `git checkout feature/CGP-3 && git merge --no-ff dev`
 then do `git push` to update `feature/CGP-3`
@@ -45,7 +45,7 @@ server ip
 `ipconfig getifaddr en0`
 
 
-## add your ssh key to cloud VM authorized keys
+## Add your ssh key to cloud VM authorized keys
 
 ```
 cat ~/.ssh/id_rsa.pub | sudo ssh -i /path/to/pem_or_key user@ipaddress "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
@@ -71,7 +71,7 @@ Host project-name
 Incase you already copied your local ssh to cloud VM authorized keys, then you can omit IdentityFile (not needed)
 
 
-## copy files to server
+## Copy files to server
 
 ```
 rsync -PrlptD ~/Documents/hor/AnnotatedData/untitled_folder ubuntu@ipaddress:/home/ubuntu/hor/csv_tmp 
