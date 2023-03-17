@@ -37,10 +37,16 @@ source ~/.bashrc
 
 ## Proper checkout/merge branch
 
-`git checkout dev && git pull` then merge `dev` branch into your branch locally `git checkout feature/CGP-3 && git merge --no-ff dev`
+`git checkout dev && git pull` 
+
+then merge `dev` branch into your branch locally 
+
+`git checkout feature/CGP-3 && git merge --no-ff dev`
+
 then do `git push` to update `feature/CGP-3`
 
-server ip
+
+Get server ip
 
 `ipconfig getifaddr en0`
 
