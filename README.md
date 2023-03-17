@@ -46,9 +46,13 @@ then merge `dev` branch into your branch locally
 then do `git push` to update `feature/CGP-3`
 
 
-Get server ip
+## Get server ip
 
 `ipconfig getifaddr en0`
+
+or 
+
+`server_ip = requests.get('http://ipconfig.in/ip').text`
 
 
 ## Add your ssh key to cloud VM authorized keys
